@@ -45,6 +45,7 @@ import java.util.LinkedList;
         this.pickUps =   new LinkedList<>();
         this.sedanes =   new LinkedList<>();
         this.vans =   new LinkedList<>();
+        assert !nombre.isBlank();
     }
 
     /**

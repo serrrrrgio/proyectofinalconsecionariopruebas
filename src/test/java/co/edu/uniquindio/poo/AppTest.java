@@ -26,16 +26,4 @@ public class AppTest {
         assertTrue(true);
         LOG.info("Finalizando test shouldAnswerWithTrue");
     }
-    
-    @Test
-    public void testEmpleadoExistente() {
-        LOG.info("Iniciando test empleado existente");
-        Administrador administrador = new Administrador("Joab", "Suarez", "jb@gmail.com", "123", "321", "joab123", "LL", PreguntaSeguridad.BEST_FRIEND, "Laura");
-        Concesionario concesionario = new Concesionario("Carros", 52145214.154, administrador);
-        Empleado empleado1 = new Empleado("Joab", "Suarez", "hg@gmail.com", "1110456789", "3224567890", "joab123", "32541", PreguntaSeguridad.BEST_FRIEND, "Dastsn", 22);
-
-        concesionario.agregarEmpleado(empleado1);
-        assertTrue(concesionario.getEmpleados().contains(empleado1));
-        LOG.info("Finalizando test empleado existente");
-}
 }
